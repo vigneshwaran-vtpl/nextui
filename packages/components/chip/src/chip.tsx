@@ -39,14 +39,16 @@ const Chip = forwardRef<"div", ChipProps>((props, ref) => {
     return endContent;
   }, [endContent, isCloseable, getCloseButtonProps]);
 
+  let vos = "abc-xyz";
+
   return (
     <Component {...getChipProps()}>
       {start}
-      <span className={slots.content({class: classNames?.content})}>{children}</span>
       <span className={slots.content({class: classNames?.content})}>
         {children}
-        {children}
+        {vos}
       </span>
+      <span className={slots.content({class: classNames?.content})}>{vos}</span>
       {end}
     </Component>
   );
