@@ -42,9 +42,7 @@ const Chip = forwardRef<"div", ChipProps>((props, ref) => {
   return (
     <Component {...getChipProps()}>
       {start}
-      <span className={slots.content({class: classNames?.content})}>
-        {children} {"+vos"}
-      </span>
+      <span className={slots.content({class: classNames?.content})}>{children} +vos </span>
       <span className={slots.content({class: classNames?.content})}>
         {children} {"+vos"}
       </span>
